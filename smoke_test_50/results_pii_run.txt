@@ -1,0 +1,95 @@
+﻿[config] label='full'  ON-arm active layers: ['sanitize', 'tighten_retrieval', 'guarded_prompt', 'grounding_gate', 'presidio_mask', 'dlp', 'refuse_on_detection']
+[kb] loaded persisted index: 3200 passages from ./kb_wiki.faiss
+[spacy] loaded 'en_core_web_sm' (lemmatization enabled)
+[off] wrote 12 multivector rows -> ..\smoke_test_50\row8_mitigation_results\extraction\off.jsonl
+2026-09-28 03:25:47 [debug    ] Initialized classification model device=device(type='cpu') model=Model(path='protectai/deberta-v3-base-prompt-injection-v2', subfolder='', revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_path='ProtectAI/deberta-v3-base-prompt-injection-v2', onnx_revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_subfolder='onnx', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='cpu'), 'return_token_type_ids': False, 'max_length': 512, 'truncation': True}, tokenizer_kwargs={})
+python : Device set to use cpu
+At C:\Users\sarke\Desktop\TrustRag - Copy\smoke_test_50\run_smoke_test.ps1:39 char:1
++ python run_mitigation_ab.py --slice "../smoke_test_50/row8_mitigation ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Device set to use cpu:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:48 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:49 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:49 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:25:49 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:06 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:07 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:07 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:23 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:23 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:23 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:23 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:23 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:24 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:24 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:24 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:24 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:45 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:26:45 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:00 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:19 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:20 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:20 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:20 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:35 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:35 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:35 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:35 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:35 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:36 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:36 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:36 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:36 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:53 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:27:53 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:21 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:21 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:21 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:21 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:21 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:22 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:22 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:22 [debug    ] No prompt injection detected   highest_score=0.0
+2026-09-28 03:28:22 [debug    ] No prompt injection detected   highest_score=0.0
+[on] wrote 12 multivector rows -> ..\smoke_test_50\row8_mitigation_results\extraction\on_full.jsonl
+[manifest] ..\smoke_test_50\row8_mitigation_results\extraction\manifest_full.json

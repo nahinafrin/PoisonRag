@@ -1,0 +1,80 @@
+"""PoisonGuard-RAG: end-to-end secure RAG pipeline (final thesis system).
+
+  1 input_normalization        clean / de-obfuscate the question          (never blocks)
+  2 query_injection_gate       DeBERTa-v3 injection risk r_q -> R; block if r_q >= 0.90
+  3 retriever                  top-k passages (BGE-M3 + FAISS, or any retriever)
+  4 context_injection_filter   drop instruction-bearing passages; threshold tightens with R
+  5 poison_consensus_filter    drop query-echo / coordinated poison; group sybils; -> R
+  6 evidence_arbitration       knowledge-anchored, isolated, sybil-resistant answer
+  7 output_privacy_filter      Presidio + DLP masking of the answer          (never blocks)
+  8 safe_response              answer | abstention | refusal
+
+Usage:
+  python -m poisonguard_rag.pipeline --question "who wrote the hobbit" --docs docs.txt
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import time
+
+from . import (context_injection_filter, evidence_arbitration, input_normalization,
+               output_privacy_filter, poison_consensus_filter, query_injection_gate, safe_response)
+from .state import RAGState
+
+_LLM = None
+
+
+def get_llm():
+    global _LLM
+    if _LLM is None:
+        _LLM = evidence_arbitration.OllamaLLM()
+    return _LLM
+
+
+def run(question: str, retrieve=None, passages: list[str] | None = None, k: int = 5,
+        joint_fallback: bool = False, best_effort: bool = True) -> RAGState:
+    st = RAGState(question=question)
+    timings = {}
+
+    def stage(name, fn, *a):
+        nonlocal st
+        t = time.time()
+        st = fn(st, *a)
+        timings[name] = round(time.time() - t, 2)
+
+    stage("input_normalization", input_normalization.run)
+    stage("query_injection_gate", query_injection_gate.run)
+    if not st.blocked:
+        st.passages = list(passages) if passages is not None else (retrieve(st.prompt, k) if retrieve else [])
+        st.meta["retrieved"] = list(st.passages)
+        stage("context_injection_filter", context_injection_filter.run)
+        stage("poison_consensus_filter", poison_consensus_filter.run)
+        stage("evidence_arbitration", evidence_arbitration.run, get_llm(), joint_fallback, best_effort)
+        stage("output_privacy_filter", output_privacy_filter.run)
+    stage("safe_response", safe_response.run)
+    st.meta["timings"] = timings
+    return st
+
+
+def record(st: RAGState) -> dict:
+    return {"question": st.question, "final_response": st.final_response, "risk": round(st.risk, 4),
+            "risk_trace": st.risk_trace, "blocked": st.blocked, "block_stage": st.block_stage or None,
+            "abstained": st.abstained, "passages_used": st.passages, **st.meta}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--question", required=True)
+    ap.add_argument("--docs", help="text file, one passage per line")
+    ap.add_argument("--k", type=int, default=5)
+    a = ap.parse_args()
+    retrieve = None
+    if a.docs:
+        from .retriever import FaissRetriever
+        retrieve = FaissRetriever([l.strip() for l in open(a.docs, encoding="utf-8") if l.strip()])
+    print(json.dumps(record(run(a.question, retrieve, k=a.k)), indent=2, ensure_ascii=False, default=str))
+
+
+if __name__ == "__main__":
+    main()

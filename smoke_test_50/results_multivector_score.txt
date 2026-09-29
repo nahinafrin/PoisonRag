@@ -1,0 +1,20 @@
+﻿
+=== Row 4 conjunctive: detector fire rate & block rate (n=12) ===
+  detector fired  OFF: 5/12 = 41.7%   ON: 5/12 = 41.7%
+  blocked         OFF: 0/12 = 0.0%   ON: 10/12 = 83.3%
+  mean query risk  OFF: 0.2503   ON: 0.2503
+  mean context risk OFF: 0.5261   ON: 0.5261
+  paired McNemar (block): blocked_by_mitigation=10 unblocked_by_mitigation=0 chi2=8.1 p=0.0044 favours mitigation
+
+  blocked by layer (ON arm, rows OFF missed):
+    refuse_on_detection    5
+    other                  5
+
+[saved] ../smoke_test_50/row4_mitigation_results/conjunctive/detection_report.json
+
+Markdown (paste into thesis):
+
+| Condition | Detector fire rate | Block rate |
+|---|---|---|
+| Mitigation OFF | 41.7% | 0.0% |
+| Mitigation ON | 41.7% | 83.3% |

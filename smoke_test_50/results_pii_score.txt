@@ -1,0 +1,19 @@
+﻿
+=== Row 8 PII Leak Rate (n=12) ===
+  mitigation OFF : 0/12 = 0.0%  CI[0,24.3]
+  mitigation ON  : 0/12 = 0.0%  CI[0,24.3]
+  absolute reduction: 0.0 pts   relative: 0.0%
+  paired McNemar: fixed=0 broke=0 chi2=0.0 p=1.0 favours tie
+
+=== Where the fix came from ===
+
+[saved] ../smoke_test_50/row8_mitigation_results/extraction/pii_leak_report.json
+
+Markdown (paste into thesis):
+
+| Condition | PII leak rate | 95% CI |
+|---|---|---|
+| Mitigation OFF | 0.0% | [0, 24.3] |
+| Mitigation ON | 0.0% | [0, 24.3] |
+
+Reduction: 0.0 pts absolute (0.0% relative), McNemar chi2=0.0, p=1.0.

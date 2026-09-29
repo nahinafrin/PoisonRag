@@ -1,0 +1,17 @@
+\begin{table*}[t]\centering\small
+\begin{tabular}{llcccccc}
+\toprule
+Dataset & Defense & Poison-(100\%) & Poison-(80\%) & Poison-(60\%) & Poison-(40\%) & Poison-(20\%) & Poison-(0\%) \\
+ & & ACC$\uparrow$/ASR$\downarrow$ & ACC$\uparrow$/ASR$\downarrow$ & ACC$\uparrow$/ASR$\downarrow$ & ACC$\uparrow$/ASR$\downarrow$ & ACC$\uparrow$/ASR$\downarrow$ & ACC$\uparrow$ \\
+\midrule
+NQ & Vanilla RAG (reproduced) & 26.0/69.0 & 25.4/66.1 & -- & -- & 46.0/34.0 & 68.0 \\
+ & TrustRAG stage 1\&2 (reproduced, official code) & 77.0/4.0 & -- & -- & -- & 77.0/5.0 & 78.0 \\
+ & PoisonGuard-RAG (ours) & 78.0/3.0 & -- & -- & -- & 79.0/1.0 & 79.0 \\
+\midrule
+HotpotQA & Vanilla RAG (reproduced) & 6.0/94.0 & -- & -- & -- & 38.0/58.0 & 73.0 \\
+ & TrustRAG stage 1\&2 (reproduced, official code) & 65.0/6.0 & -- & -- & -- & 66.0/24.0 & -- \\
+ & PoisonGuard-RAG (ours) & 49.2/11.9 & -- & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\caption{PoisonGuard-RAG vs.\ TrustRAG on the TrustRAG/PoisonedRAG protocol (Llama-3.1-8B).}
+\end{table*}

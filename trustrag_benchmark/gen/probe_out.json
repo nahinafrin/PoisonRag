@@ -1,0 +1,282 @@
+{
+ "rajpurkar/squad": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "rajpurkar/squad",
+     "config": "plain_text",
+     "split": "train"
+    },
+    {
+     "dataset": "rajpurkar/squad",
+     "config": "plain_text",
+     "split": "validation"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"features\": [{\"feature_idx\": 0, \"name\": \"id\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 1, \"name\": \"title\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 2, \"name\": \"context\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 3, \"name\": \"question\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 4, \"name\": \"answers\", \"type\": {\"text\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"answer_start\": {\"feature\": {\"dtype\": \"int32\", \"_type\": \"Value\"}, \"_type\": \"List\"}}}], \"rows\": [{\"row_idx\": 0, \"row\": {\"id\": \"56be4db0acb8001400a502ec\", \"title\": \"Super_Bowl_50\", \"context\": \"Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24\\u201310 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \\\"golden anniversary\\\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \\\"Super Bowl L\\\"), so that the logo could prominently feature the Arabic numerals 50.\", \"question\": \"Which NFL team represented the AFC at Super Bowl 50?\", \"answers\": {\"text\": [\"Denver Broncos\", \"Denver Broncos\", \"Denver Broncos\"], \"answer_start\": [177, 177, 177]}}, \"truncated_cells\": []}], \"num_rows_total\": 10570, \"num_rows_per_page\": 100, \"partial\": false}"
+ },
+ "mandarjoshi/trivia_qa": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.nocontext",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.nocontext",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.nocontext",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web.nocontext",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web.nocontext",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.web.nocontext",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia.nocontext",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia.nocontext",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "rc.wikipedia.nocontext",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered",
+     "split": "test"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered.nocontext",
+     "split": "train"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered.nocontext",
+     "split": "validation"
+    },
+    {
+     "dataset": "mandarjoshi/trivia_qa",
+     "config": "unfiltered.nocontext",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"features\": [{\"feature_idx\": 0, \"name\": \"question\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 1, \"name\": \"question_id\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 2, \"name\": \"question_source\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 3, \"name\": \"entity_pages\", \"type\": {\"doc_source\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"filename\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"wiki_context\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}}}, {\"feature_idx\": 4, \"name\": \"search_results\", \"type\": {\"description\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"filename\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"rank\": {\"feature\": {\"dtype\": \"int32\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"url\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"search_context\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}}}, {\"feature_idx\": 5, \"name\": \"answer\", \"type\": {\"aliases\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"normalized_aliases\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"matched_wiki_entity_name\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"normalized_matched_wiki_entity_name\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"normalized_value\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"value\": {\"dtype\": \"string\", \"_type\": \"Value\"}}}], \"rows\": [{\"row_idx\": 0, \"row\": {\"question\": \"Who was the man behind The Chipmunks?\", \"question_id\": \"tc_2\", \"question_source\": \"http://www.triviacountry.com/\", \"entity_pages\": {\"doc_source\": [], \"filename\": [], \"title\": [], \"wiki_context\": []}, \"search_results\": {\"description\": [\"A struggling songwriter named Dave Seville finds success when he comes across a trio of singing chipmunks: ... Title: Alvin and the Chipmunks (2007) ...\", \"The man who brought the Chipmunks to life, ... Five more Chipmunks singles charted in the early '60s, ... See Behind-the-Scenes Rehearsal Photos of Fox's 'The Passion'\"], \"filename\": [\"61/61_97.txt\", \"10/10_99.txt\"], \"rank\": [4, 6], \"title\": [\"Alvin and the Chipmunks (2007) - IMDb\", \"The Chipmunks - Biography | Billboard\"], \"url\": [\"http://www.imdb.com/title/tt0952640/\", \"http://www.billboard.com/artist/393411/chipmunks/biography\"], \"search_context\": [\"Alvin and the Chipmunks (2007) - IMDb\\nIMDb\\n17 January 2017 4:34 PM, UTC\\nNEWS\\nThere was an error trying to load your rating for this title.\\nSome parts of this page won't work property. Please reload or try later.\\nX Beta I'm Watching This!\\nKeep track of everything you watch; tell your friends.\\nError\\nAlvin and the Chipmunks\\u00a0( 2007 )\\nPG |\\nA struggling songwriter named "
+ },
+ "mrqa-workshop/mrqa": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "mrqa-workshop/mrqa",
+     "config": "plain_text",
+     "split": "train"
+    },
+    {
+     "dataset": "mrqa-workshop/mrqa",
+     "config": "plain_text",
+     "split": "validation"
+    },
+    {
+     "dataset": "mrqa-workshop/mrqa",
+     "config": "plain_text",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"error\": \"Not found.\"}"
+ },
+ "xanhho/2WikiMultihopQA": {
+  "splits": {
+   "error": "The dataset viewer doesn't support this dataset because it runs arbitrary python code. Please open a discussion in the discussion tab if you think this is an error and tag @lhoestq and @severo."
+  },
+  "row": "{\"error\": \"Parameter 'config' is required\"}"
+ },
+ "voidful/2WikiMultihopQA": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "voidful/2WikiMultihopQA",
+     "config": "default",
+     "split": "train"
+    },
+    {
+     "dataset": "voidful/2WikiMultihopQA",
+     "config": "default",
+     "split": "validation"
+    },
+    {
+     "dataset": "voidful/2WikiMultihopQA",
+     "config": "default",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"error\": \"The dataset generation failed\", \"cause_exception\": \"ArrowTypeError\", \"cause_message\": \"Expected bytes, got a 'list' object\", \"cause_traceback\": [\"Traceback (most recent call last):\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/packaged_modules/json/json.py\\\", line 122, in _generate_tables\\n    pa_table = paj.read_json(\\n\", \"  File \\\"pyarrow/_json.pyx\\\", line 308, in pyarrow._json.read_json\\n\", \"  File \\\"pyarrow/error.pxi\\\", line 154, in pyarrow.lib.pyarrow_internal_check_status\\n\", \"  File \\\"pyarrow/error.pxi\\\", line 91, in pyarrow.lib.check_status\\n\", \"pyarrow.lib.ArrowInvalid: JSON parse error: Column() changed from object to array in row 0\\n\", \"\\nDuring handling of the above exception, another exception occurred:\\n\\n\", \"Traceback (most recent call last):\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/builder.py\\\", line 1995, in _prepare_split_single\\n    for _, table in generator:\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/packaged_modules/json/json.py\\\", line 162, in _generate_tables\\n    pa_table = pa.Table.from_pydict(mapping)\\n\", \"  File \\\"pyarrow/table.pxi\\\", line 1813, in pyarrow.lib._Tabular.from_pydict\\n\", \"  File \\\"pyarrow/table.pxi\\\", line 5347, in pyarrow.lib._from_pydict\\n\", \"  File \\\"pyarrow/array.pxi\\\", line 373, in pyarrow.lib.asarray\\n\", \"  File \\\"pyarrow/array.pxi\\\", line 343, in pyarrow.lib.array\\n\", \"  File \\\"pyarrow/array.pxi\\\", line 42, in pyarrow.lib._sequence_to_array\\n\", \"  File \\\"pyarrow/error.pxi\\\", line 154, in pyarrow.lib.pyarrow_internal_check_status\\n\", \"  File \\\"pyarrow/error.pxi\\\", line 91, in pyarrow.lib.check_status\\n\", \"pyarrow.lib.ArrowTypeError: Expected bytes, got a 'list' object\\n\", \"\\nThe above exception was the direct cause of the following exception:\\n\\n\", \"Traceback (most recent call last):\\n\", \"  File \\\"/src/services/worker/src/worker/job_runners/config/parquet_and_info.py\\\", line 1529, in compute_config_parquet_and_info_response\\n    parquet_operations = convert_to_parquet(builder)\\n\", \"  File \\\"/src/services/worker/src/worker/job_runners/config/parquet_and_info.py\\\", line 1154, in convert_to_parquet\\n    builder.download_and_prepare(\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/builder.py\\\", line 1027, in download_and_prepare\\n    self._download_and_prepare(\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/builder.py\\\", line 1122, in _download_and_prepare\\n    self._prepare_split(split_generator, **prepare_split_kwargs)\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/builder.py\\\", line 1882, in _prepare_split\\n    for job_id, done, content in self._prepare_split_single(\\n\", \"  File \\\"/src/services/worker/.venv/lib/python3.9/site-packages/datasets/builder.py\\\", line 2038, in _prepare_split_single\\n    raise DatasetGenerationError(\\\"An error occurred while generating the dataset\\\") from e\\n\", \"datasets."
+ },
+ "framolfese/2WikiMultihopQA": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "framolfese/2WikiMultihopQA",
+     "config": "default",
+     "split": "train"
+    },
+    {
+     "dataset": "framolfese/2WikiMultihopQA",
+     "config": "default",
+     "split": "validation"
+    },
+    {
+     "dataset": "framolfese/2WikiMultihopQA",
+     "config": "default",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"features\": [{\"feature_idx\": 0, \"name\": \"id\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 1, \"name\": \"question\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 2, \"name\": \"answer\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 3, \"name\": \"type\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 4, \"name\": \"evidences\", \"type\": {\"feature\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"_type\": \"List\"}}, {\"feature_idx\": 5, \"name\": \"supporting_facts\", \"type\": {\"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"sent_id\": {\"feature\": {\"dtype\": \"int64\", \"_type\": \"Value\"}, \"_type\": \"List\"}}}, {\"feature_idx\": 6, \"name\": \"context\", \"type\": {\"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"sentences\": {\"feature\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"_type\": \"List\"}}}], \"rows\": [{\"row_idx\": 0, \"row\": {\"id\": \"8813f87c0bdd11eba7f7acde48001122\", \"question\": \"Who is the mother of the director of film Polish-Russian War (Film)?\", \"answer\": \"Ma\\u0142gorzata Braunek\", \"type\": \"compositional\", \"evidences\": [[\"Polish-Russian War\", \"director\", \"Xawery \\u017bu\\u0142awski\"], [\"Xawery \\u017bu\\u0142awski\", \"mother\", \"Ma\\u0142gorzata Braunek\"]], \"supporting_facts\": {\"title\": [\"Polish-Russian War (film)\", \"Xawery \\u017bu\\u0142awski\"], \"sent_id\": [1, 2]}, \"context\": {\"title\": [\"Maheen Khan\", \"Viktor Yeliseyev\", \"Alice Washburn\", \"Minamoto no Chikako\", \"Polish-Russian War (film)\", \"A Snow White Christmas\", \"Snow White and the Three Stooges\", \"Xawery \\u017bu\\u0142awski\", \"Snow White and the Seven Dwarfs (1955 film)\", \"Liberty Ross\"], \"sentences\": [[\"Maheen Khan is a Pakistani fashion and costume designer, also an award winner fashion designer for fashion labels like\\\" The Embroidery HouseMaheen\\\" and\\\" Gulabo\\\".\", \"She has done many national and international fashion events and shows.\", \"She undertook embroidery for the film Snow White and the Huntsman and television series\", \"The Jewel in the Crown.\"], [\"Viktor Petrovich Yeliseyev( born June 9, 1950) is a Russian general, orchestra conductor and music teacher.\", \"He is the director of the Ministry of the Interior Ensemble, one of the two Russian Red Army Choirs.\"], [\"Alice Washburn( 1860- 1929) was an American stage and film actress.\", \"She worked at the Edison, Vitagraph and Kalem studios.\", \"Her final film Snow White was her only known feature film.\", \"She died of heart attack in November 1929.\"], [\"She was the mother of Prince Morinaga.\"], [\"Polish-Russian War\", \"(Wojna polsko-ruska) is a 2009 Polish film directed by Xawery \\u017bu\\u0142awski based on the novel Polish-Russian War under the white-red flag by Dorota Mas\\u0142owska.\"], [\"A Snow White Christmas is a Christmas animated television special produced by Filmation and telecast December 19, 1980, on CBS.\", \"It is a sequel to the fairy tale\\\" Snow White\\\", unrelated to Filmation's other "
+ },
+ "scholarly-shadows-syndicate/2WikiMultihopQA": {
+  "splits": {
+   "error": "The dataset has been renamed. Please use the current dataset name."
+  },
+  "row": "{\"error\": \"Parameter 'config' is required\"}"
+ },
+ "akariasai/PopQA": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "akariasai/PopQA",
+     "config": "default",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"features\": [{\"feature_idx\": 0, \"name\": \"id\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 1, \"name\": \"subj\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 2, \"name\": \"prop\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 3, \"name\": \"obj\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 4, \"name\": \"subj_id\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 5, \"name\": \"prop_id\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 6, \"name\": \"obj_id\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 7, \"name\": \"s_aliases\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 8, \"name\": \"o_aliases\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 9, \"name\": \"s_uri\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 10, \"name\": \"o_uri\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 11, \"name\": \"s_wiki_title\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 12, \"name\": \"o_wiki_title\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 13, \"name\": \"s_pop\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 14, \"name\": \"o_pop\", \"type\": {\"dtype\": \"int64\", \"_type\": \"Value\"}}, {\"feature_idx\": 15, \"name\": \"question\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 16, \"name\": \"possible_answers\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}], \"rows\": [{\"row_idx\": 0, \"row\": {\"id\": 4222362, \"subj\": \"George Rankin\", \"prop\": \"occupation\", \"obj\": \"politician\", \"subj_id\": 1850297, \"prop_id\": 22, \"obj_id\": 2834605, \"s_aliases\": \"[\\\"George James Rankin\\\"]\", \"o_aliases\": \"[\\\"political leader\\\",\\\"political figure\\\",\\\"polit.\\\",\\\"pol\\\"]\", \"s_uri\": \"http://www.wikidata.org/entity/Q5543720\", \"o_uri\": \"http://www.wikidata.org/entity/Q82955\", \"s_wiki_title\": \"George Rankin\", \"o_wiki_title\": \"Politician\", \"s_pop\": 142, \"o_pop\": 25692, \"question\": \"What is George Rankin's occupation?\", \"possible_answers\": \"[\\\"politician\\\", \\\"political leader\\\", \\\"political figure\\\", \\\"polit.\\\", \\\"pol\\\"]\"}, \"truncated_cells\": []}], \"num_rows_total\": 14267, \"num_rows_per_page\": 100, \"partial\": false}"
+ },
+ "hotpotqa/hotpot_qa": {
+  "splits": {
+   "splits": [
+    {
+     "dataset": "hotpotqa/hotpot_qa",
+     "config": "distractor",
+     "split": "train"
+    },
+    {
+     "dataset": "hotpotqa/hotpot_qa",
+     "config": "distractor",
+     "split": "validation"
+    },
+    {
+     "dataset": "hotpotqa/hotpot_qa",
+     "config": "fullwiki",
+     "split": "train"
+    },
+    {
+     "dataset": "hotpotqa/hotpot_qa",
+     "config": "fullwiki",
+     "split": "validation"
+    },
+    {
+     "dataset": "hotpotqa/hotpot_qa",
+     "config": "fullwiki",
+     "split": "test"
+    }
+   ],
+   "pending": [],
+   "failed": []
+  },
+  "row": "{\"features\": [{\"feature_idx\": 0, \"name\": \"id\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 1, \"name\": \"question\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 2, \"name\": \"answer\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 3, \"name\": \"type\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 4, \"name\": \"level\", \"type\": {\"dtype\": \"string\", \"_type\": \"Value\"}}, {\"feature_idx\": 5, \"name\": \"supporting_facts\", \"type\": {\"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"sent_id\": {\"feature\": {\"dtype\": \"int32\", \"_type\": \"Value\"}, \"_type\": \"List\"}}}, {\"feature_idx\": 6, \"name\": \"context\", \"type\": {\"title\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"sentences\": {\"feature\": {\"feature\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"_type\": \"List\"}, \"_type\": \"List\"}}}], \"rows\": [{\"row_idx\": 0, \"row\": {\"id\": \"5a8b57f25542995d1e6f1371\", \"question\": \"Were Scott Derrickson and Ed Wood of the same nationality?\", \"answer\": \"yes\", \"type\": \"comparison\", \"level\": \"hard\", \"supporting_facts\": {\"title\": [\"Scott Derrickson\", \"Ed Wood\"], \"sent_id\": [0, 0]}, \"context\": {\"title\": [\"Ed Wood (film)\", \"Scott Derrickson\", \"Woodson, Arkansas\", \"Tyler Bates\", \"Ed Wood\", \"Deliver Us from Evil (2014 film)\", \"Adam Collis\", \"Sinister (film)\", \"Conrad Brooks\", \"Doctor Strange (2016 film)\"], \"sentences\": [[\"Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.\", \" The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.\", \" Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.\"], [\"Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.\", \" He lives in Los Angeles, California.\", \" He is best known for directing horror films such as \\\"Sinister\\\", \\\"The Exorcism of Emily Rose\\\", and \\\"Deliver Us From Evil\\\", as well as the 2016 Marvel Cinematic Universe installment, \\\"Doctor Strange.\\\"\"], [\"Woodson is a census-designated place (CDP) in Pulaski County, Arkansas, in the United States.\", \" Its population was 403 at the 2010 census.\", \" It is part of the Little Rock\\u2013North Little Rock\\u2013Conway Metropolitan Statistical Area.\", \" Woodson and its accompanying Woodson Lake and Wood Hollow are the namesake for Ed Wood Sr., a prominent plantation owner, trader, and businessman at the turn of the 20th century.\", \" Woodson is adjacent to the Wood Plantation, the largest of the plantations own by Ed Wood Sr.\"], [\"Tyler Bates (born June 5, 1965) is an American musician, music producer, and composer for films, television, and video games.\", \" Much of his work is in the action and horror film genres, with films like \\\"Dawn of the Dead, 300, Sucker Punch,\\\" and \\\"John Wick.\\\"\", \" He has colla"
+ }
+}

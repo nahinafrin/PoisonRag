@@ -1,0 +1,32 @@
+{
+  "n": 200,
+  "asr_off": {
+    "rate_pct": 30.5,
+    "ci": [
+      24.5,
+      37.2
+    ],
+    "succeeded": 61
+  },
+  "asr_on": {
+    "rate_pct": 16.5,
+    "ci": [
+      12.0,
+      22.3
+    ],
+    "succeeded": 33
+  },
+  "absolute_reduction_pct": 14.0,
+  "relative_reduction_pct": 45.9,
+  "paired_mcnemar": {
+    "mitigation_fixed": 30,
+    "mitigation_broke": 2,
+    "chi2": 22.781,
+    "p": 0.0,
+    "favours": "mitigation"
+  },
+  "fixed_by_layer": {
+    "refuse_on_detection": 24,
+    "grounding_gate": 6
+  }
+}

@@ -1,0 +1,34 @@
+digraph G {
+  graph [rankdir=TB, fontname="Helvetica", nodesep=0.3, ranksep=0.3, pad=0.2, bgcolor="white"];
+  node  [fontname="Helvetica", fontsize=10.5, shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#2a78d6", penwidth=1.2, margin="0.15,0.07"];
+  edge  [fontname="Helvetica", fontsize=9, color="#52514e", arrowsize=0.7];
+
+  in  [label="Question q  +  surviving passages P (with source groups)", shape=oval, fillcolor="#ffffff", color="#52514e"];
+  cmp [label="Comparison / yes-no\nquestion?", shape=diamond, fillcolor="#fff6e6", color="#eda100", margin="0.04,0.02"];
+  k1  [label="Knowledge prompt\n(≤ 50 words, may say “I don't know”)"];
+  k2  [label="Decomposition prompt\none fact per entity → compare"];
+  ext [label="Extract short answer p\n(UNKNOWN if none)   — never sees P"];
+  rd  [label="Read each passage in isolation\na_i ∈ {short answer, INSUFFICIENT}\n(run concurrently with the knowledge call)"];
+  cl  [label="Cluster {p, a_i} by token-F1 ≥ 0.6\nwitnesses = distinct source groups"];
+  pk  [label="p known?", shape=diamond, fillcolor="#fff6e6", color="#eda100"];
+  ia  [label="INTERNAL-ANCHORED\nanswer = p  (conflicting passages\ncannot overrule own knowledge)", fillcolor="#e6f5ee", color="#1baf7a"];
+  ex  [label="Top external cluster\nwitnesses ≥ 2 → corroborated\n= 1 → uncorroborated"];
+  vd  [label="Poison dropped in S5 and\nanswer = answer pushed by a\ndropped passage?", shape=diamond, fillcolor="#fff6e6", color="#eda100", margin="0.03,0.02"];
+  veto[label="VETO: remove passages giving the\npoison answer; re-cluster", fillcolor="#fdeceb", color="#e34948"];
+  cor [label="CORROBORATED\nanswer = cluster answer", fillcolor="#e6f5ee", color="#1baf7a"];
+  be  [label="BEST EFFORT (no refusal)\nLLM answers from own knowledge +\nremaining passages (closed book if none)", fillcolor="#fff6e6", color="#eda100"];
+
+  in -> cmp;
+  cmp -> k2 [label=" yes"]; cmp -> k1 [label=" no"];
+  k1 -> ext; k2 -> ext;
+  in -> rd;
+  ext -> cl; rd -> cl;
+  cl -> pk;
+  pk -> ia [label=" yes"];
+  pk -> ex [label=" no"];
+  ex -> vd;
+  vd -> veto [label=" yes"];
+  veto -> ex [label=" re-evaluate", style=dashed];
+  vd -> cor [label=" no, ≥ 2 witnesses"];
+  vd -> be  [label=" no, < 2 witnesses"];
+}

@@ -1,0 +1,1295 @@
+[
+ {
+  "system": "ours_v1",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 1,
+  "ACC": 0.0,
+  "ASR": 0.0,
+  "ACC_ci": [
+   0.0,
+   79.3
+  ],
+  "ASR_ci": [
+   0.0,
+   79.3
+  ],
+  "refused_or_abstained": 1,
+  "errors": 0,
+  "mean_sec": 258.58,
+  "adv_in_topk": 5.0,
+  "adv_reaching_generator": 3.0
+ },
+ {
+  "system": "ours_v2",
+  "ds": "nq",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 64.0,
+  "ASR": 2.0,
+  "ACC_ci": [
+   54.2,
+   72.7
+  ],
+  "ASR_ci": [
+   0.6,
+   7.0
+  ],
+  "refused_or_abstained": 6,
+  "errors": 0,
+  "mean_sec": 24.99,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v2",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 61.0,
+  "ASR": 2.0,
+  "ACC_ci": [
+   51.2,
+   70.0
+  ],
+  "ASR_ci": [
+   0.6,
+   7.0
+  ],
+  "refused_or_abstained": 7,
+  "errors": 0,
+  "mean_sec": 42.21,
+  "adv_in_topk": 0.99,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v2",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 60.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   50.2,
+   69.1
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 5,
+  "errors": 0,
+  "mean_sec": 25.17,
+  "adv_in_topk": 0.54,
+  "adv_reaching_generator": 0.52
+ },
+ {
+  "system": "ours_v2",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 60.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   50.2,
+   69.1
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 12,
+  "errors": 1,
+  "mean_sec": 40.59,
+  "adv_in_topk": 4.79,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v2",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 52.0,
+  "ASR": 16.0,
+  "ACC_ci": [
+   42.3,
+   61.5
+  ],
+  "ASR_ci": [
+   10.1,
+   24.4
+  ],
+  "refused_or_abstained": 5,
+  "errors": 0,
+  "mean_sec": 24.5,
+  "adv_in_topk": 2.4,
+  "adv_reaching_generator": 0.8
+ },
+ {
+  "system": "ours_v21",
+  "ds": "nq",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 66.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   56.3,
+   74.5
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 6,
+  "errors": 0,
+  "mean_sec": 29.04,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v21",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 66.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   56.3,
+   74.5
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 6,
+  "errors": 0,
+  "mean_sec": 26.1,
+  "adv_in_topk": 0.99,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v21",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 63.0,
+  "ASR": 3.0,
+  "ACC_ci": [
+   53.2,
+   71.8
+  ],
+  "ASR_ci": [
+   1.0,
+   8.5
+  ],
+  "refused_or_abstained": 5,
+  "errors": 0,
+  "mean_sec": 29.84,
+  "adv_in_topk": 0.54,
+  "adv_reaching_generator": 0.52
+ },
+ {
+  "system": "ours_v21",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 69.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   59.4,
+   77.2
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 12,
+  "errors": 0,
+  "mean_sec": 17.37,
+  "adv_in_topk": 4.79,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "ours_v21",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 53.0,
+  "ASR": 18.0,
+  "ACC_ci": [
+   43.3,
+   62.5
+  ],
+  "ASR_ci": [
+   11.7,
+   26.7
+  ],
+  "refused_or_abstained": 7,
+  "errors": 0,
+  "mean_sec": 24.73,
+  "adv_in_topk": 2.4,
+  "adv_reaching_generator": 0.81
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 57.0,
+  "ASR": 3.0,
+  "ACC_ci": [
+   47.2,
+   66.3
+  ],
+  "ASR_ci": [
+   1.0,
+   8.5
+  ],
+  "refused_or_abstained": 25,
+  "errors": 0,
+  "mean_sec": 33.47,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 54.0,
+  "ASR": 16.0,
+  "ACC_ci": [
+   44.3,
+   63.4
+  ],
+  "ASR_ci": [
+   10.1,
+   24.4
+  ],
+  "refused_or_abstained": 15,
+  "errors": 0,
+  "mean_sec": 11.68,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.97
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 49.0,
+  "ASR": 2.0,
+  "ACC_ci": [
+   39.4,
+   58.7
+  ],
+  "ASR_ci": [
+   0.6,
+   7.0
+  ],
+  "refused_or_abstained": 41,
+  "errors": 0,
+  "mean_sec": 33.19,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 54.0,
+  "ASR": 30.0,
+  "ACC_ci": [
+   44.3,
+   63.4
+  ],
+  "ASR_ci": [
+   21.9,
+   39.6
+  ],
+  "refused_or_abstained": 2,
+  "errors": 0,
+  "mean_sec": 23.59,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.99
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 47.0,
+  "ASR": 2.0,
+  "ACC_ci": [
+   37.5,
+   56.7
+  ],
+  "ASR_ci": [
+   0.6,
+   7.0
+  ],
+  "refused_or_abstained": 45,
+  "errors": 0,
+  "mean_sec": 17.71,
+  "adv_in_topk": 4.99,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 48.0,
+  "ASR": 10.0,
+  "ACC_ci": [
+   38.5,
+   57.7
+  ],
+  "ASR_ci": [
+   5.5,
+   17.4
+  ],
+  "refused_or_abstained": 35,
+  "errors": 0,
+  "mean_sec": 10.1,
+  "adv_in_topk": 4.93,
+  "adv_reaching_generator": 0.37
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 79.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   70.0,
+   85.8
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 2,
+  "errors": 0,
+  "mean_sec": 15.26,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 77.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   67.8,
+   84.2
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 19.8,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 1.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 78.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   68.9,
+   85.0
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 2,
+  "errors": 0,
+  "mean_sec": 9.72,
+  "adv_in_topk": 0.99,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 79.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   70.0,
+   85.8
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 2,
+  "errors": 0,
+  "mean_sec": 15.0,
+  "adv_in_topk": 0.54,
+  "adv_reaching_generator": 0.52
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 76.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   66.8,
+   83.3
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 9,
+  "errors": 0,
+  "mean_sec": 4.21,
+  "adv_in_topk": 4.79,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "poisonguard",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 78.0,
+  "ASR": 3.0,
+  "ACC_ci": [
+   68.9,
+   85.0
+  ],
+  "ASR_ci": [
+   1.0,
+   8.5
+  ],
+  "refused_or_abstained": 2,
+  "errors": 0,
+  "mean_sec": 14.79,
+  "adv_in_topk": 2.4,
+  "adv_reaching_generator": 0.81
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 76.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   66.8,
+   83.3
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 32.08,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 71.0,
+  "ASR": 7.0,
+  "ACC_ci": [
+   61.5,
+   79.0
+  ],
+  "ASR_ci": [
+   3.4,
+   13.7
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 32.47,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.93
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 67.0,
+  "ASR": 21.0,
+  "ACC_ci": [
+   57.3,
+   75.4
+  ],
+  "ASR_ci": [
+   14.2,
+   30.0
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 32.36,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.85
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 66.0,
+  "ASR": 24.0,
+  "ACC_ci": [
+   56.3,
+   74.5
+  ],
+  "ASR_ci": [
+   16.7,
+   33.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 22.63,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.92
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 4,
+  "rate": "80%",
+  "variant": "without_q",
+  "n": 18,
+  "ACC": 77.8,
+  "ASR": 16.7,
+  "ACC_ci": [
+   54.8,
+   91.0
+  ],
+  "ASR_ci": [
+   5.8,
+   39.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 19.38,
+  "adv_in_topk": 3.83,
+  "adv_reaching_generator": 0.28
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 68.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   58.3,
+   76.3
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 18.04,
+  "adv_in_topk": 4.99,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "trustrag",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 65.0,
+  "ASR": 6.0,
+  "ACC_ci": [
+   55.3,
+   73.6
+  ],
+  "ASR_ci": [
+   2.8,
+   12.5
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 17.11,
+  "adv_in_topk": 4.93,
+  "adv_reaching_generator": 0.06
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 78.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   68.9,
+   85.0
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 24.1,
+  "adv_in_topk": 0.0,
+  "adv_reaching_generator": 0.0
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 78.0,
+  "ASR": 4.0,
+  "ACC_ci": [
+   68.9,
+   85.0
+  ],
+  "ASR_ci": [
+   1.6,
+   9.8
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 23.54,
+  "adv_in_topk": 1.0,
+  "adv_reaching_generator": 0.98
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 78.0,
+  "ASR": 8.0,
+  "ACC_ci": [
+   68.9,
+   85.0
+  ],
+  "ASR_ci": [
+   4.1,
+   15.0
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 25.92,
+  "adv_in_topk": 0.99,
+  "adv_reaching_generator": 0.94
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 77.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   67.8,
+   84.2
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 21.68,
+  "adv_in_topk": 0.54,
+  "adv_reaching_generator": 0.52
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 2,
+  "rate": "40%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 81.0,
+  "ASR": 5.0,
+  "ACC_ci": [
+   72.2,
+   87.5
+  ],
+  "ASR_ci": [
+   2.2,
+   11.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 33.04,
+  "adv_in_topk": 1.09,
+  "adv_reaching_generator": 0.39
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 3,
+  "rate": "60%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 79.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   70.0,
+   85.8
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 32.43,
+  "adv_in_topk": 1.61,
+  "adv_reaching_generator": 0.35
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 4,
+  "rate": "80%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 77.0,
+  "ASR": 4.0,
+  "ACC_ci": [
+   67.8,
+   84.2
+  ],
+  "ASR_ci": [
+   1.6,
+   9.8
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 32.0,
+  "adv_in_topk": 2.0,
+  "adv_reaching_generator": 0.39
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 77.0,
+  "ASR": 1.0,
+  "ACC_ci": [
+   67.8,
+   84.2
+  ],
+  "ASR_ci": [
+   0.2,
+   5.4
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 19.94,
+  "adv_in_topk": 4.79,
+  "adv_reaching_generator": 0.05
+ },
+ {
+  "system": "trustrag",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 77.0,
+  "ASR": 4.0,
+  "ACC_ci": [
+   67.8,
+   84.2
+  ],
+  "ASR_ci": [
+   1.6,
+   9.8
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 19.34,
+  "adv_in_topk": 2.4,
+  "adv_reaching_generator": 0.36
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 73.0,
+  "ASR": 2.0,
+  "ACC_ci": [
+   63.6,
+   80.7
+  ],
+  "ASR_ci": [
+   0.6,
+   7.0
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.93,
+  "adv_in_topk": 0.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 35.0,
+  "ASR": 53.0,
+  "ACC_ci": [
+   26.4,
+   44.7
+  ],
+  "ASR_ci": [
+   43.3,
+   62.5
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.69,
+  "adv_in_topk": 1.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 43.0,
+  "ASR": 53.0,
+  "ACC_ci": [
+   33.7,
+   52.8
+  ],
+  "ASR_ci": [
+   43.3,
+   62.5
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.86,
+  "adv_in_topk": 1.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 38.0,
+  "ASR": 58.0,
+  "ACC_ci": [
+   29.1,
+   47.8
+  ],
+  "ASR_ci": [
+   48.2,
+   67.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 3.05,
+  "adv_in_topk": 1.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 2,
+  "rate": "40%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 30.0,
+  "ASR": 69.0,
+  "ACC_ci": [
+   21.9,
+   39.6
+  ],
+  "ASR_ci": [
+   59.4,
+   77.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.75,
+  "adv_in_topk": 2.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 3,
+  "rate": "60%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 22.0,
+  "ASR": 76.0,
+  "ACC_ci": [
+   15.0,
+   31.1
+  ],
+  "ASR_ci": [
+   66.8,
+   83.3
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.62,
+  "adv_in_topk": 2.97
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 4,
+  "rate": "80%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 17.0,
+  "ASR": 83.0,
+  "ACC_ci": [
+   10.9,
+   25.5
+  ],
+  "ASR_ci": [
+   74.5,
+   89.1
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 3.74,
+  "adv_in_topk": 3.95
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 4.0,
+  "ASR": 96.0,
+  "ACC_ci": [
+   1.6,
+   9.8
+  ],
+  "ASR_ci": [
+   90.2,
+   98.4
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.79,
+  "adv_in_topk": 4.99
+ },
+ {
+  "system": "vanilla",
+  "ds": "hotpotqa",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 6.0,
+  "ASR": 94.0,
+  "ACC_ci": [
+   2.8,
+   12.5
+  ],
+  "ASR_ci": [
+   87.5,
+   97.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.55,
+  "adv_in_topk": 4.93
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 0,
+  "rate": "0%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 68.0,
+  "ASR": 0.0,
+  "ACC_ci": [
+   58.3,
+   76.3
+  ],
+  "ASR_ci": [
+   0.0,
+   3.7
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 11.82,
+  "adv_in_topk": 0.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "pia",
+  "n": 100,
+  "ACC": 45.0,
+  "ASR": 43.0,
+  "ACC_ci": [
+   35.6,
+   54.8
+  ],
+  "ASR_ci": [
+   33.7,
+   52.8
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 2.86,
+  "adv_in_topk": 1.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 45.0,
+  "ASR": 48.0,
+  "ACC_ci": [
+   35.6,
+   54.8
+  ],
+  "ASR_ci": [
+   38.5,
+   57.7
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 6.09,
+  "adv_in_topk": 0.99
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 1,
+  "rate": "20%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 46.0,
+  "ASR": 34.0,
+  "ACC_ci": [
+   36.6,
+   55.7
+  ],
+  "ASR_ci": [
+   25.5,
+   43.7
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 18.51,
+  "adv_in_topk": 0.54
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 2,
+  "rate": "40%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 35.0,
+  "ASR": 49.0,
+  "ACC_ci": [
+   26.4,
+   44.7
+  ],
+  "ASR_ci": [
+   39.4,
+   58.7
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 5.18,
+  "adv_in_topk": 1.09
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 3,
+  "rate": "60%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 33.0,
+  "ASR": 57.0,
+  "ACC_ci": [
+   24.6,
+   42.7
+  ],
+  "ASR_ci": [
+   47.2,
+   66.3
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 5.51,
+  "adv_in_topk": 1.61
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 4,
+  "rate": "80%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 28.0,
+  "ASR": 65.0,
+  "ACC_ci": [
+   20.1,
+   37.5
+  ],
+  "ASR_ci": [
+   55.3,
+   73.6
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 5.2,
+  "adv_in_topk": 2.0
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "with_q",
+  "n": 100,
+  "ACC": 10.0,
+  "ASR": 90.0,
+  "ACC_ci": [
+   5.5,
+   17.4
+  ],
+  "ASR_ci": [
+   82.6,
+   94.5
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 8.84,
+  "adv_in_topk": 4.79
+ },
+ {
+  "system": "vanilla",
+  "ds": "nq",
+  "poison": 5,
+  "rate": "100%",
+  "variant": "without_q",
+  "n": 100,
+  "ACC": 26.0,
+  "ASR": 69.0,
+  "ACC_ci": [
+   18.4,
+   35.4
+  ],
+  "ASR_ci": [
+   59.4,
+   77.2
+  ],
+  "refused_or_abstained": 0,
+  "errors": 0,
+  "mean_sec": 15.0,
+  "adv_in_topk": 2.4
+ }
+]

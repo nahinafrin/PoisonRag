@@ -1,0 +1,31 @@
+digraph G {
+  graph [rankdir=TB, fontname="Helvetica", nodesep=0.35, ranksep=0.32, pad=0.2, bgcolor="white"];
+  node  [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#2a78d6", penwidth=1.2, margin="0.18,0.08"];
+  edge  [fontname="Helvetica", fontsize=9, color="#52514e", arrowsize=0.7];
+
+  q   [label="User question", shape=oval, fillcolor="#ffffff", color="#52514e"];
+  s1  [label="S1  Input normalisation\nmojibake / zero-width / obfuscation repair  (never blocks)"];
+  s2  [label="S2  Query-injection gate\nDeBERTa-v3 detector → r_q ;  R ← noisy-OR(R, r_q)"];
+  d2  [label="r_q ≥ 0.90 ?", shape=diamond, fillcolor="#fff6e6", color="#eda100", margin="0.05,0.03"];
+  blk [label="Fixed refusal\n(injection)", fillcolor="#fdeceb", color="#e34948"];
+  s3  [label="S3  Retrieval\nContriever top-k = 5 passages"];
+  s4  [label="S4  Context-injection filter\nper-passage DeBERTa-v3 + supersession-cue regex\nθ = 0.50  (0.30 if R > 0.45)  → drop dirty passages"];
+  s5  [label="S5  Poison-consensus filter  (no LLM)\nquery echo q_i + coordination c_i (cos > 0.85, ROUGE-L > 0.25)\nr_i ≥ 0.5 → drop;  near-duplicates → one source group"];
+  s6  [label="S6  Evidence arbitration  (LLM, parallel calls)\nown knowledge  ·  isolated per-passage reading\nanswer voting by source group  ·  dropped-cluster veto\n→ see Figure 4.2", fillcolor="#dbe8fa", penwidth=2];
+  s7  [label="S7  Output privacy filter\nPresidio NER + DLP regex (Luhn) → mask, never refuse"];
+  s8  [label="S8  Safe response\nanswer  |  transparent abstention  |  refusal", fillcolor="#ffffff"];
+  R   [label="Adaptive risk R\nR_t = 1 − (1 − R_{t−1})(1 − w_t r_t)", shape=note, fillcolor="#f4f4f2", color="#8f8e89", fontsize=10];
+
+  q -> s1 -> s2 -> d2;
+  d2 -> blk [label=" yes"];
+  d2 -> s3  [label=" no"];
+  s3 -> s4 -> s5 -> s6 -> s7 -> s8;
+  blk -> s8 [constraint=false];
+  s2 -> R [style=dashed, color="#8f8e89", constraint=false, label=" r_q"];
+  s5 -> R [style=dashed, color="#8f8e89", constraint=false, label=" max r_i"];
+  R -> s4 [style=dashed, color="#8f8e89", constraint=false, label=" tightens θ"];
+  R -> s6 [style=dashed, color="#8f8e89", constraint=false, label=" poison seen?"];
+  s3 -> R [style=invis];
+  {rank=same; s4; R}
+  {rank=same; d2; }
+}

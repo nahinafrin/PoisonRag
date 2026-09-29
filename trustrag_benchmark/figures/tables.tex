@@ -1,0 +1,91 @@
+% requires \usepackage{booktabs,multirow}
+\begin{table*}[t]\centering\small
+\caption{Accuracy (ACC, \%) and attack success rate (ASR, \%) under PoisonedRAG corpus poisoning on the held-out test half (50 questions per cell, Llama-3.1-8B). Best defense per column in bold.}\label{tab:main}
+\begin{tabular}{llccccccccccc}\toprule
+Dataset & Defense & \multicolumn{2}{c}{Poison 100\%} & \multicolumn{2}{c}{Poison 80\%} & \multicolumn{2}{c}{Poison 60\%} & \multicolumn{2}{c}{Poison 40\%} & \multicolumn{2}{c}{Poison 20\%} & Clean \\
+ & & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ \\\midrule
+\multirow{4}{*}{NQ} & Vanilla RAG & 24 & 70 & 28 & 62 & 30 & 58 & 28 & 56 & 44 & 36 & 66 \\
+ & TrustRAG & 68 & 6 & 68 & \textbf{4} & 72 & \textbf{2} & \textbf{76} & 6 & 68 & 6 & 70 \\
+ & PoisonGuard v4 (previous) & \textbf{72} & \textbf{4} & \textbf{76} & \textbf{4} & 72 & 8 & 74 & 6 & \textbf{76} & \textbf{2} & \textbf{76} \\
+ & \textbf{PoisonGuard-RAG (ours)} & 70 & 10 & 72 & 6 & \textbf{74} & 4 & 74 & \textbf{4} & 74 & \textbf{2} & 74 \\
+\midrule
+\multirow{4}{*}{HotpotQA} & Vanilla RAG & 4 & 96 & 18 & 82 & 24 & 76 & 28 & 72 & 42 & 54 & 74 \\
+ & TrustRAG & \textbf{64} & 8 & 66 & 6 & \textbf{78} & \textbf{4} & \textbf{70} & \textbf{8} & 62 & 28 & 76 \\
+ & PoisonGuard v4 (previous) & \textbf{64} & 4 & 66 & 6 & 70 & \textbf{4} & 58 & 14 & \textbf{70} & \textbf{14} & 76 \\
+ & \textbf{PoisonGuard-RAG (ours)} & 62 & \textbf{0} & \textbf{70} & \textbf{4} & 74 & 10 & 66 & 16 & \textbf{70} & \textbf{14} & \textbf{78} \\
+\midrule
+\multirow{4}{*}{MS-MARCO} & Vanilla RAG & 46 & 42 & 46 & 42 & 44 & 42 & 54 & 34 & 58 & 28 & 76 \\
+ & TrustRAG & 84 & 10 & 84 & 10 & 84 & 10 & 84 & 10 & 86 & 10 & 84 \\
+ & PoisonGuard v4 (previous) & \textbf{92} & \textbf{2} & \textbf{92} & \textbf{2} & 90 & \textbf{2} & \textbf{92} & \textbf{4} & \textbf{90} & \textbf{4} & \textbf{92} \\
+ & \textbf{PoisonGuard-RAG (ours)} & \textbf{92} & 4 & \textbf{92} & 4 & \textbf{92} & \textbf{2} & 90 & \textbf{4} & \textbf{90} & 6 & \textbf{92} \\
+\bottomrule
+\end{tabular}\end{table*}
+
+\begin{table*}[t]\centering\small
+\caption{As Table~\ref{tab:main}, scored with strict whole-word matching (so ``no is not matched inside ``know), applied identically to every system.}\label{tab:strict}
+\begin{tabular}{llccccccccccc}\toprule
+Dataset & Defense & \multicolumn{2}{c}{Poison 100\%} & \multicolumn{2}{c}{Poison 80\%} & \multicolumn{2}{c}{Poison 60\%} & \multicolumn{2}{c}{Poison 40\%} & \multicolumn{2}{c}{Poison 20\%} & Clean \\
+ & & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ & ASR$\downarrow$ & ACC$\uparrow$ \\\midrule
+\multirow{4}{*}{NQ} & Vanilla RAG & 22 & 72 & 26 & 64 & 28 & 60 & 26 & 58 & 42 & 38 & 66 \\
+ & TrustRAG & 68 & 6 & 68 & \textbf{4} & 72 & \textbf{2} & \textbf{76} & 6 & 68 & 6 & 70 \\
+ & PoisonGuard v4 (previous) & \textbf{72} & \textbf{4} & \textbf{76} & \textbf{4} & 72 & 8 & 74 & 6 & \textbf{76} & \textbf{2} & \textbf{76} \\
+ & \textbf{PoisonGuard-RAG (ours)} & 70 & 10 & 72 & 6 & \textbf{74} & 4 & 74 & \textbf{4} & 74 & \textbf{2} & 74 \\
+\midrule
+\multirow{4}{*}{HotpotQA} & Vanilla RAG & 4 & 94 & 18 & 80 & 24 & 74 & 28 & 70 & 42 & 50 & 74 \\
+ & TrustRAG & \textbf{64} & 6 & 66 & 4 & \textbf{76} & \textbf{2} & \textbf{70} & \textbf{4} & 58 & 28 & 76 \\
+ & PoisonGuard v4 (previous) & \textbf{64} & 2 & 66 & 4 & 70 & 4 & 58 & 14 & \textbf{70} & \textbf{14} & 76 \\
+ & \textbf{PoisonGuard-RAG (ours)} & 60 & \textbf{0} & \textbf{70} & \textbf{2} & 74 & 10 & 66 & 16 & \textbf{70} & \textbf{14} & \textbf{78} \\
+\midrule
+\multirow{4}{*}{MS-MARCO} & Vanilla RAG & 44 & 44 & 44 & 44 & 44 & 42 & 54 & 34 & 58 & 28 & 76 \\
+ & TrustRAG & 78 & 4 & 82 & \textbf{0} & 78 & \textbf{0} & 76 & \textbf{0} & 80 & 6 & 76 \\
+ & PoisonGuard v4 (previous) & \textbf{88} & \textbf{2} & \textbf{88} & 2 & \textbf{88} & 2 & \textbf{90} & 4 & \textbf{88} & \textbf{4} & \textbf{90} \\
+ & \textbf{PoisonGuard-RAG (ours)} & \textbf{88} & 4 & \textbf{88} & 4 & \textbf{88} & 2 & 88 & 4 & \textbf{88} & 6 & 88 \\
+\bottomrule
+\end{tabular}\end{table*}
+
+\begin{table}[t]\centering\small\caption{Summary over the five poisoned settings (mean ACC/ASR), clean accuracy, refusal rate and latency on the same laptop.}\label{tab:summary}
+\begin{tabular}{llrrrrrr}\toprule Dataset & Defense & mACC$\uparrow$ & mASR$\downarrow$ & Clean$\uparrow$ & Refuse$\downarrow$ & s/q$\downarrow$ & Speed-up \\\midrule
+\multirow{3}{*}{NQ} & TrustRAG & 70.4 & \textbf{4.8} & 70 & \textbf{0.0} & 26.9 & 1.0$\times$ \\
+ & PoisonGuard v4 (previous) & \textbf{74.0} & \textbf{4.8} & \textbf{76} & \textbf{0.0} & 8.1 & 3.3$\times$ \\
+ & PoisonGuard-RAG (ours) & 72.8 & 5.2 & 74 & \textbf{0.0} & \textbf{6.0} & 4.5$\times$ \\
+\midrule
+\multirow{3}{*}{HotpotQA} & TrustRAG & 68.0 & 10.8 & 76 & \textbf{0.0} & 21.6 & 1.0$\times$ \\
+ & PoisonGuard v4 (previous) & 65.6 & \textbf{8.4} & 76 & \textbf{0.0} & 7.4 & 2.9$\times$ \\
+ & PoisonGuard-RAG (ours) & \textbf{68.4} & 8.8 & \textbf{78} & \textbf{0.0} & \textbf{6.2} & 3.5$\times$ \\
+\midrule
+\multirow{3}{*}{MS-MARCO} & TrustRAG & 84.4 & 10.0 & 84 & \textbf{0.0} & 20.8 & 1.0$\times$ \\
+ & PoisonGuard v4 (previous) & \textbf{91.2} & \textbf{2.8} & \textbf{92} & \textbf{0.0} & 5.2 & 4.0$\times$ \\
+ & PoisonGuard-RAG (ours) & \textbf{91.2} & 4.0 & \textbf{92} & \textbf{0.0} & \textbf{4.6} & 4.5$\times$ \\
+\bottomrule
+\end{tabular}\end{table}
+
+\begin{table}[t]\centering\small\caption{Passage-level filtering (poisoned settings) and attack success on queries where at least one poisoned passage reached the generator.}\label{tab:filter}
+\begin{tabular}{llrrrrr}\toprule Dataset & Defense & Recall & Prec. & Clean kept$\uparrow$ & Exposed & ASR$|$exp.$\downarrow$ \\\midrule
+\multirow{2}{*}{NQ} & TrustRAG & \textbf{76.6} & \textbf{84.1} & 92.3 & 96 & 8.3 \\
+ & PoisonGuard-RAG (ours) & 54.0 & 81.9 & \textbf{93.6} & 144 & \textbf{6.2} \\
+\midrule
+\multirow{2}{*}{HotpotQA} & TrustRAG & \textbf{90.4} & 88.9 & 83.0 & 64 & 29.7 \\
+ & PoisonGuard-RAG (ours) & 84.4 & \textbf{97.8} & \textbf{97.2} & 90 & \textbf{23.3} \\
+\midrule
+\multirow{2}{*}{MS-MARCO} & TrustRAG & \textbf{69.1} & \textbf{36.8} & 69.0 & 69 & 21.7 \\
+ & PoisonGuard-RAG (ours) & 41.7 & 32.4 & \textbf{77.3} & 104 & \textbf{9.6} \\
+\bottomrule
+\end{tabular}\end{table}
+
+\begin{table}[t]\centering\small\caption{Paired per-question comparison with TrustRAG over the five poisoned settings (exact McNemar test on discordant pairs).}\label{tab:paired}
+\begin{tabular}{lrrrrrr}\toprule & \multicolumn{3}{c}{Correct answers} & \multicolumn{3}{c}{Successful attacks} \\ Dataset & Ours only & TrustRAG only & $p$ & TrustRAG only & Ours only & $p$ \\\midrule
+NQ & 14 & 8 & 0.286 & 5 & 6 & 1.000 \\
+HotpotQA & 25 & 24 & 1.000 & 19 & 14 & 0.487 \\
+MS-MARCO & 21 & 4 & $<$0.001 & 19 & 4 & 0.003 \\
+\midrule
+All & 60 & 36 & 0.018 & 43 & 24 & 0.027 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[t]\centering\small\caption{Evidence-arbitration routes taken by PoisonGuard-RAG in the poisoned settings: share of queries (\%) and ACC (\%) on that route.}\label{tab:routes}
+\begin{tabular}{lccc}\toprule Route & NQ & HotpotQA & MS-MARCO \\\midrule
+Parametric answer agrees with evidence & 23.6 / 92 & 28.4 / 79 & 21.2 / 91 \\
+Parametric answer overrides conflicting evidence & 66.4 / 70 & 18.0 / 87 & 66.8 / 94 \\
+Corroborated by independent passages & 0.8 / 0 & 5.6 / 21 & 3.2 / 62 \\
+Best effort: knowledge + surviving passages & 8.8 / 55 & 37.6 / 65 & 8.0 / 80 \\
+Best effort: closed book (lone passage hidden) & 0.4 / 0 & 10.4 / 46 & 0.8 / 100 \\
+\bottomrule\end{tabular}\end{table}

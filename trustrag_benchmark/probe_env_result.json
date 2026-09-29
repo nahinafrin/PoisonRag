@@ -1,0 +1,24 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu_count": 12,
+  "nvidia_smi": "name, memory.total [MiB]\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB\n",
+  "ollama_tags": [
+    "mistral:7b",
+    "llama3.1:8b",
+    "qwen2.5:3b",
+    "llama-guard3:1b",
+    "llama3.2:3b"
+  ],
+  "ollama_gen": {
+    "text": "Paris.",
+    "sec": 11.62,
+    "eval_count": 3,
+    "eval_duration_s": 0.035239
+  },
+  "hf_filter": {
+    "status": 502,
+    "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+  },
+  "hf_hub": 200,
+  "rouge_score": "ok"
+}

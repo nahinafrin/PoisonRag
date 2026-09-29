@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-09-28T08:28:40.399235+00:00",
+  "slice": "../smoke_test_50/row8_mitigation_results/row8_pii_extraction.jsonl",
+  "label": "full",
+  "limit": 12,
+  "off_jsonl": "..\\smoke_test_50\\row8_mitigation_results\\extraction\\off.jsonl",
+  "on_jsonl": "..\\smoke_test_50\\row8_mitigation_results\\extraction\\on_full.jsonl",
+  "on_mitigation_config": {
+    "enabled": true,
+    "sanitize": true,
+    "tighten_retrieval": true,
+    "guarded_prompt": true,
+    "grounding_gate": true,
+    "presidio_mask": true,
+    "dlp": true,
+    "refuse_on_detection": true
+  },
+  "score_command": "python score_mitigation_ab.py --off ..\\smoke_test_50\\row8_mitigation_results\\extraction\\off.jsonl --on ..\\smoke_test_50\\row8_mitigation_results\\extraction\\on_full.jsonl --out ..\\smoke_test_50\\row8_mitigation_results\\extraction\\report_full.json"
+}

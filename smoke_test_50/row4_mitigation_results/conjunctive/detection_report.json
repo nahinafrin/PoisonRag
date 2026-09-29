@@ -1,0 +1,58 @@
+{
+  "n": 12,
+  "detector_fire_rate": {
+    "off": {
+      "rate_pct": 41.7,
+      "ci": [
+        19.3,
+        68.0
+      ],
+      "count": 5
+    },
+    "on": {
+      "rate_pct": 41.7,
+      "ci": [
+        19.3,
+        68.0
+      ],
+      "count": 5
+    }
+  },
+  "block_rate": {
+    "off": {
+      "rate_pct": 0.0,
+      "ci": [
+        0,
+        24.3
+      ],
+      "count": 0
+    },
+    "on": {
+      "rate_pct": 83.3,
+      "ci": [
+        55.2,
+        95.3
+      ],
+      "count": 10
+    }
+  },
+  "mean_query_risk": {
+    "off": 0.2503,
+    "on": 0.2503
+  },
+  "mean_context_risk": {
+    "off": 0.5261,
+    "on": 0.5261
+  },
+  "paired_mcnemar_on_block": {
+    "mitigation_blocked": 10,
+    "mitigation_unblocked": 0,
+    "chi2": 8.1,
+    "p": 0.0044,
+    "favours": "mitigation"
+  },
+  "blocked_by_layer": {
+    "refuse_on_detection": 5,
+    "other": 5
+  }
+}

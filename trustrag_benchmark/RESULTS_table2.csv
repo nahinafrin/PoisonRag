@@ -1,0 +1,74 @@
+setting,dataset,defense,poison_rate,ACC,ASR,n,refused_or_abstained_pct,sec_per_query
+without_q,NQ,Vanilla RAG,100%,26.0,69.0,100,0.0,15.0
+without_q,NQ,Vanilla RAG,80%,28.0,65.0,100,0.0,5.2
+without_q,NQ,Vanilla RAG,60%,33.0,57.0,100,0.0,5.5
+without_q,NQ,Vanilla RAG,40%,35.0,49.0,100,0.0,5.2
+without_q,NQ,Vanilla RAG,20%,46.0,34.0,100,0.0,18.5
+without_q,NQ,Vanilla RAG,0%,68.0,,100,0.0,11.8
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",100%,77.0,4.0,100,0.0,19.3
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",80%,77.0,4.0,100,0.0,32.0
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",60%,79.0,1.0,100,0.0,32.4
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",40%,81.0,5.0,100,0.0,33.0
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",20%,77.0,5.0,100,0.0,21.7
+without_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",0%,78.0,,100,0.0,24.1
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),100%,76.0,2.0,100,6.0,14.8
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),80%,76.0,3.0,100,4.0,14.9
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),60%,77.0,3.0,100,3.0,15.8
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),40%,77.0,1.0,100,4.0,17.3
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),20%,79.0,1.0,100,3.0,15.0
+without_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),0%,79.0,,100,3.0,15.3
+without_q,MS-MARCO,Vanilla RAG,100%,38.0,54.0,100,0.0,2.8
+without_q,MS-MARCO,Vanilla RAG,80%,39.0,53.0,100,0.0,2.7
+without_q,MS-MARCO,Vanilla RAG,60%,41.0,50.0,100,0.0,2.7
+without_q,MS-MARCO,Vanilla RAG,40%,45.0,45.0,100,0.0,2.7
+without_q,MS-MARCO,Vanilla RAG,20%,57.0,32.0,100,0.0,2.8
+without_q,MS-MARCO,Vanilla RAG,0%,81.0,,100,0.0,2.8
+without_q,MS-MARCO,"TrustRAG stage 1&2 (reproduced, official code)",100%,86.0,8.0,100,0.0,19.8
+without_q,MS-MARCO,"TrustRAG stage 1&2 (reproduced, official code)",80%,84.0,8.0,100,0.0,19.9
+without_q,MS-MARCO,"TrustRAG stage 1&2 (reproduced, official code)",60%,86.0,9.0,100,0.0,20.1
+without_q,MS-MARCO,"TrustRAG stage 1&2 (reproduced, official code)",40%,87.0,7.0,100,0.0,20.1
+without_q,MS-MARCO,"TrustRAG stage 1&2 (reproduced, official code)",20%,90.5,4.8,21,0.0,21.3
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),100%,87.0,3.0,100,5.0,13.8
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),80%,87.0,4.0,100,4.0,13.7
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),60%,87.0,4.0,100,4.0,13.9
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),40%,86.0,6.0,100,3.0,13.7
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),20%,87.0,5.0,100,3.0,14.0
+without_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),0%,88.0,,100,5.0,14.9
+without_q,HotpotQA,Vanilla RAG,100%,6.0,94.0,100,0.0,2.5
+without_q,HotpotQA,Vanilla RAG,80%,17.0,83.0,100,0.0,3.7
+without_q,HotpotQA,Vanilla RAG,60%,22.0,76.0,100,0.0,2.6
+without_q,HotpotQA,Vanilla RAG,40%,30.0,69.0,100,0.0,2.8
+without_q,HotpotQA,Vanilla RAG,20%,38.0,58.0,100,0.0,3.1
+without_q,HotpotQA,Vanilla RAG,0%,73.0,,100,0.0,2.9
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",100%,65.0,6.0,100,0.0,17.1
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",80%,68.0,7.0,100,0.0,18.8
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",60%,77.0,4.0,100,0.0,19.7
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",40%,69.0,7.0,100,0.0,20.5
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",20%,66.0,24.0,100,0.0,22.6
+without_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",0%,76.0,,100,0.0,32.1
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),100%,47.0,4.0,100,42.0,10.1
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),80%,47.0,6.0,100,42.0,9.1
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),60%,47.0,5.0,100,40.0,6.2
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),40%,49.0,9.0,100,34.0,8.8
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),20%,53.0,28.0,100,6.0,23.6
+without_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),0%,57.0,,100,25.0,33.5
+with_q,NQ,Vanilla RAG,100%,10.0,90.0,100,0.0,8.8
+with_q,NQ,Vanilla RAG,20%,45.0,48.0,100,0.0,6.1
+with_q,NQ,Vanilla RAG,0%,68.0,,100,0.0,11.8
+with_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",100%,77.0,1.0,100,0.0,19.9
+with_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",20%,78.0,8.0,100,0.0,25.9
+with_q,NQ,"TrustRAG stage 1&2 (reproduced, official code)",0%,78.0,,100,0.0,24.1
+with_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),100%,76.0,1.0,100,9.0,4.2
+with_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),20%,76.0,1.0,100,9.0,9.7
+with_q,NQ,PoisonGuard-RAG v3.1 (isolated arbitration),0%,79.0,,100,3.0,15.3
+with_q,MS-MARCO,Vanilla RAG,0%,81.0,,100,0.0,2.8
+with_q,MS-MARCO,PoisonGuard-RAG v3.1 (isolated arbitration),0%,88.0,,100,5.0,14.9
+with_q,HotpotQA,Vanilla RAG,100%,4.0,96.0,100,0.0,2.8
+with_q,HotpotQA,Vanilla RAG,20%,43.0,53.0,100,0.0,2.9
+with_q,HotpotQA,Vanilla RAG,0%,73.0,,100,0.0,2.9
+with_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",100%,68.0,5.0,100,0.0,18.0
+with_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",20%,67.0,21.0,100,0.0,32.4
+with_q,HotpotQA,"TrustRAG stage 1&2 (reproduced, official code)",0%,76.0,,100,0.0,32.1
+with_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),100%,47.0,2.0,100,45.0,17.7
+with_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),20%,49.0,2.0,100,41.0,33.2
+with_q,HotpotQA,PoisonGuard-RAG v3.1 (isolated arbitration),0%,57.0,,100,25.0,33.5

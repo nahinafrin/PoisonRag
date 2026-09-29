@@ -1,0 +1,19 @@
+source,model,dataset,defense,pia_acc,pia_asr,poisonedrag_acc,poisonedrag_asr,clean_acc
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,No RAG,,,,,38
+TrustRAG Table 1,Llama3.1-8B,NQ,No RAG,,,,,70
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,No RAG,,,,,75
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,Vanilla RAG,3,95,27,81,71
+TrustRAG Table 1,Llama3.1-8B,NQ,Vanilla RAG,4,93,26,73,71
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,Vanilla RAG,2,98,28,70,79
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,RobustRAG (keyword),55,4,40,50,54
+TrustRAG Table 1,Llama3.1-8B,NQ,RobustRAG (keyword),44,11,51,27,61
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,RobustRAG (keyword),69,15,67,19,72
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,InstructRAG-ICL,64,27,54,41,83
+TrustRAG Table 1,Llama3.1-8B,NQ,InstructRAG-ICL,55,19,58,37,68
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,InstructRAG-ICL,57,19,63,33,89
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,AstuteRAG,51,28,65,16,65
+TrustRAG Table 1,Llama3.1-8B,NQ,AstuteRAG,70,14,77,11,75
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,AstuteRAG,71,25,54,41,83
+TrustRAG Table 1,Llama3.1-8B,HotpotQA,TrustRAG,73,3,66,18,74
+TrustRAG Table 1,Llama3.1-8B,NQ,TrustRAG,83,2,82,9,82
+TrustRAG Table 1,Llama3.1-8B,MS-MARCO,TrustRAG,86,7,83,11,85

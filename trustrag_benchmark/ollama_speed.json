@@ -1,0 +1,34 @@
+[
+ {
+  "opts": {
+   "num_ctx": 4096
+  },
+  "wall": 14.9,
+  "load_s": 7.8607656,
+  "prompt_tok": 20,
+  "prompt_s": 0.061451,
+  "gen_tok": 200,
+  "gen_s": 4.910999
+ },
+ {
+  "ps": {
+   "models": []
+  }
+ },
+ {
+  "opts": {
+   "num_ctx": 2048
+  },
+  "wall": 16.04,
+  "load_s": 8.9813102,
+  "prompt_tok": 20,
+  "prompt_s": 0.068457,
+  "gen_tok": 200,
+  "gen_s": 4.959467
+ },
+ {
+  "ps": {
+   "models": []
+  }
+ }
+]

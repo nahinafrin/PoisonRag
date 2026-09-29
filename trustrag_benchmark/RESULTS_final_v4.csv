@@ -1,0 +1,145 @@
+metric,dataset,defense,poison_rate_pct,ACC,ASR,n,refused_or_abstained_pct,sec_per_query
+paper,NQ,Vanilla RAG,100,24.0,70.0,50,0.0,12.3
+paper,NQ,Vanilla RAG,80,28.0,62.0,50,0.0,5.7
+paper,NQ,Vanilla RAG,60,30.0,58.0,50,0.0,5.9
+paper,NQ,Vanilla RAG,40,28.0,56.0,50,0.0,5.3
+paper,NQ,Vanilla RAG,20,44.0,36.0,50,0.0,18.0
+paper,NQ,Vanilla RAG,0,66.0,,50,0.0,16.6
+paper,NQ,"TrustRAG (official code, reproduced)",100,68.0,6.0,50,0.0,18.9
+paper,NQ,"TrustRAG (official code, reproduced)",80,68.0,4.0,50,0.0,31.9
+paper,NQ,"TrustRAG (official code, reproduced)",60,72.0,2.0,50,0.0,31.8
+paper,NQ,"TrustRAG (official code, reproduced)",40,76.0,6.0,50,0.0,32.7
+paper,NQ,"TrustRAG (official code, reproduced)",20,68.0,6.0,50,0.0,21.0
+paper,NQ,"TrustRAG (official code, reproduced)",0,70.0,,50,0.0,25.2
+paper,NQ,PoisonGuard-RAG v3.1,100,70.0,2.0,50,4.0,14.7
+paper,NQ,PoisonGuard-RAG v3.1,80,70.0,6.0,50,8.0,14.3
+paper,NQ,PoisonGuard-RAG v3.1,60,70.0,6.0,50,6.0,14.9
+paper,NQ,PoisonGuard-RAG v3.1,40,70.0,2.0,50,8.0,16.8
+paper,NQ,PoisonGuard-RAG v3.1,20,74.0,2.0,50,2.0,10.3
+paper,NQ,PoisonGuard-RAG v3.1,0,74.0,,50,2.0,15.2
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",100,72.0,4.0,50,0.0,16.5
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",80,76.0,4.0,50,0.0,6.5
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",60,72.0,8.0,50,0.0,4.9
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",40,74.0,6.0,50,0.0,5.3
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",20,76.0,2.0,50,0.0,6.2
+paper,NQ,"PoisonGuard-RAG v4 (ours, final)",0,76.0,,50,0.0,9.4
+paper,HotpotQA,Vanilla RAG,100,4.0,96.0,50,0.0,2.6
+paper,HotpotQA,Vanilla RAG,80,18.0,82.0,50,0.0,2.6
+paper,HotpotQA,Vanilla RAG,60,24.0,76.0,50,0.0,2.6
+paper,HotpotQA,Vanilla RAG,40,28.0,72.0,50,0.0,2.7
+paper,HotpotQA,Vanilla RAG,20,42.0,54.0,50,0.0,3.1
+paper,HotpotQA,Vanilla RAG,0,74.0,,50,0.0,2.9
+paper,HotpotQA,"TrustRAG (official code, reproduced)",100,64.0,8.0,50,0.0,16.8
+paper,HotpotQA,"TrustRAG (official code, reproduced)",80,66.0,6.0,50,0.0,18.9
+paper,HotpotQA,"TrustRAG (official code, reproduced)",60,78.0,4.0,50,0.0,19.7
+paper,HotpotQA,"TrustRAG (official code, reproduced)",40,70.0,8.0,50,0.0,20.1
+paper,HotpotQA,"TrustRAG (official code, reproduced)",20,62.0,28.0,50,0.0,23.0
+paper,HotpotQA,"TrustRAG (official code, reproduced)",0,76.0,,50,0.0,31.3
+paper,HotpotQA,PoisonGuard-RAG v3.1,100,42.0,2.0,50,44.0,8.1
+paper,HotpotQA,PoisonGuard-RAG v3.1,80,40.0,4.0,50,50.0,5.4
+paper,HotpotQA,PoisonGuard-RAG v3.1,60,42.0,4.0,50,46.0,5.8
+paper,HotpotQA,PoisonGuard-RAG v3.1,40,42.0,10.0,50,40.0,9.6
+paper,HotpotQA,PoisonGuard-RAG v3.1,20,54.0,26.0,50,4.0,30.2
+paper,HotpotQA,PoisonGuard-RAG v3.1,0,56.0,,50,28.0,33.0
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",100,64.0,4.0,50,0.0,4.2
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",80,66.0,6.0,50,0.0,5.7
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",60,70.0,4.0,50,0.0,7.0
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",40,58.0,14.0,50,0.0,8.0
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",20,70.0,14.0,50,0.0,8.8
+paper,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",0,76.0,,50,0.0,10.7
+paper,MS-MARCO,Vanilla RAG,100,46.0,42.0,50,0.0,2.8
+paper,MS-MARCO,Vanilla RAG,80,46.0,42.0,50,0.0,2.7
+paper,MS-MARCO,Vanilla RAG,60,44.0,42.0,50,0.0,2.7
+paper,MS-MARCO,Vanilla RAG,40,54.0,34.0,50,0.0,2.8
+paper,MS-MARCO,Vanilla RAG,20,58.0,28.0,50,0.0,2.8
+paper,MS-MARCO,Vanilla RAG,0,76.0,,50,0.0,2.9
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",100,84.0,10.0,50,0.0,19.4
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",80,84.0,10.0,50,0.0,19.8
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",60,84.0,10.0,50,0.0,20.7
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",40,84.0,10.0,50,0.0,20.8
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",20,86.0,10.0,50,0.0,21.6
+paper,MS-MARCO,"TrustRAG (official code, reproduced)",0,84.0,,50,0.0,22.4
+paper,MS-MARCO,PoisonGuard-RAG v3.1,100,88.0,2.0,50,6.0,13.0
+paper,MS-MARCO,PoisonGuard-RAG v3.1,80,88.0,2.0,50,6.0,14.5
+paper,MS-MARCO,PoisonGuard-RAG v3.1,60,88.0,2.0,50,6.0,14.5
+paper,MS-MARCO,PoisonGuard-RAG v3.1,40,86.0,6.0,50,4.0,13.8
+paper,MS-MARCO,PoisonGuard-RAG v3.1,20,86.0,6.0,50,4.0,14.1
+paper,MS-MARCO,PoisonGuard-RAG v3.1,0,88.0,,50,6.0,15.2
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",100,92.0,2.0,50,0.0,5.3
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",80,92.0,2.0,50,0.0,4.6
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",60,90.0,2.0,50,0.0,5.3
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",40,92.0,4.0,50,0.0,5.3
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",20,90.0,4.0,50,0.0,4.8
+paper,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",0,92.0,,50,0.0,6.1
+strict,NQ,Vanilla RAG,100,22.0,72.0,50,0.0,12.3
+strict,NQ,Vanilla RAG,80,26.0,64.0,50,0.0,5.7
+strict,NQ,Vanilla RAG,60,28.0,60.0,50,0.0,5.9
+strict,NQ,Vanilla RAG,40,26.0,58.0,50,0.0,5.3
+strict,NQ,Vanilla RAG,20,42.0,38.0,50,0.0,18.0
+strict,NQ,Vanilla RAG,0,66.0,,50,0.0,16.6
+strict,NQ,"TrustRAG (official code, reproduced)",100,68.0,6.0,50,0.0,18.9
+strict,NQ,"TrustRAG (official code, reproduced)",80,68.0,4.0,50,0.0,31.9
+strict,NQ,"TrustRAG (official code, reproduced)",60,72.0,2.0,50,0.0,31.8
+strict,NQ,"TrustRAG (official code, reproduced)",40,76.0,6.0,50,0.0,32.7
+strict,NQ,"TrustRAG (official code, reproduced)",20,68.0,6.0,50,0.0,21.0
+strict,NQ,"TrustRAG (official code, reproduced)",0,70.0,,50,0.0,25.2
+strict,NQ,PoisonGuard-RAG v3.1,100,74.0,4.0,50,4.0,14.7
+strict,NQ,PoisonGuard-RAG v3.1,80,70.0,6.0,50,8.0,14.3
+strict,NQ,PoisonGuard-RAG v3.1,60,70.0,6.0,50,6.0,14.9
+strict,NQ,PoisonGuard-RAG v3.1,40,70.0,2.0,50,8.0,16.8
+strict,NQ,PoisonGuard-RAG v3.1,20,74.0,2.0,50,2.0,10.3
+strict,NQ,PoisonGuard-RAG v3.1,0,74.0,,50,2.0,15.2
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",100,72.0,4.0,50,0.0,16.5
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",80,76.0,4.0,50,0.0,6.5
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",60,72.0,8.0,50,0.0,4.9
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",40,74.0,6.0,50,0.0,5.3
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",20,76.0,2.0,50,0.0,6.2
+strict,NQ,"PoisonGuard-RAG v4 (ours, final)",0,76.0,,50,0.0,9.4
+strict,HotpotQA,Vanilla RAG,100,4.0,94.0,50,0.0,2.6
+strict,HotpotQA,Vanilla RAG,80,18.0,80.0,50,0.0,2.6
+strict,HotpotQA,Vanilla RAG,60,24.0,74.0,50,0.0,2.6
+strict,HotpotQA,Vanilla RAG,40,28.0,70.0,50,0.0,2.7
+strict,HotpotQA,Vanilla RAG,20,42.0,50.0,50,0.0,3.1
+strict,HotpotQA,Vanilla RAG,0,74.0,,50,0.0,2.9
+strict,HotpotQA,"TrustRAG (official code, reproduced)",100,64.0,6.0,50,0.0,16.8
+strict,HotpotQA,"TrustRAG (official code, reproduced)",80,66.0,4.0,50,0.0,18.9
+strict,HotpotQA,"TrustRAG (official code, reproduced)",60,76.0,2.0,50,0.0,19.7
+strict,HotpotQA,"TrustRAG (official code, reproduced)",40,70.0,4.0,50,0.0,20.1
+strict,HotpotQA,"TrustRAG (official code, reproduced)",20,58.0,28.0,50,0.0,23.0
+strict,HotpotQA,"TrustRAG (official code, reproduced)",0,76.0,,50,0.0,31.3
+strict,HotpotQA,PoisonGuard-RAG v3.1,100,42.0,6.0,50,44.0,8.1
+strict,HotpotQA,PoisonGuard-RAG v3.1,80,40.0,4.0,50,50.0,5.4
+strict,HotpotQA,PoisonGuard-RAG v3.1,60,42.0,4.0,50,46.0,5.8
+strict,HotpotQA,PoisonGuard-RAG v3.1,40,42.0,8.0,50,40.0,9.6
+strict,HotpotQA,PoisonGuard-RAG v3.1,20,54.0,24.0,50,4.0,30.2
+strict,HotpotQA,PoisonGuard-RAG v3.1,0,56.0,,50,28.0,33.0
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",100,64.0,2.0,50,0.0,4.2
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",80,66.0,4.0,50,0.0,5.7
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",60,70.0,4.0,50,0.0,7.0
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",40,58.0,14.0,50,0.0,8.0
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",20,70.0,14.0,50,0.0,8.8
+strict,HotpotQA,"PoisonGuard-RAG v4 (ours, final)",0,76.0,,50,0.0,10.7
+strict,MS-MARCO,Vanilla RAG,100,44.0,44.0,50,0.0,2.8
+strict,MS-MARCO,Vanilla RAG,80,44.0,44.0,50,0.0,2.7
+strict,MS-MARCO,Vanilla RAG,60,44.0,42.0,50,0.0,2.7
+strict,MS-MARCO,Vanilla RAG,40,54.0,34.0,50,0.0,2.8
+strict,MS-MARCO,Vanilla RAG,20,58.0,28.0,50,0.0,2.8
+strict,MS-MARCO,Vanilla RAG,0,76.0,,50,0.0,2.9
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",100,78.0,4.0,50,0.0,19.4
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",80,82.0,0.0,50,0.0,19.8
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",60,78.0,0.0,50,0.0,20.7
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",40,76.0,0.0,50,0.0,20.8
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",20,80.0,6.0,50,0.0,21.6
+strict,MS-MARCO,"TrustRAG (official code, reproduced)",0,76.0,,50,0.0,22.4
+strict,MS-MARCO,PoisonGuard-RAG v3.1,100,86.0,2.0,50,6.0,13.0
+strict,MS-MARCO,PoisonGuard-RAG v3.1,80,88.0,2.0,50,6.0,14.5
+strict,MS-MARCO,PoisonGuard-RAG v3.1,60,86.0,2.0,50,6.0,14.5
+strict,MS-MARCO,PoisonGuard-RAG v3.1,40,84.0,6.0,50,4.0,13.8
+strict,MS-MARCO,PoisonGuard-RAG v3.1,20,84.0,6.0,50,4.0,14.1
+strict,MS-MARCO,PoisonGuard-RAG v3.1,0,86.0,,50,6.0,15.2
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",100,88.0,2.0,50,0.0,5.3
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",80,88.0,2.0,50,0.0,4.6
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",60,88.0,2.0,50,0.0,5.3
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",40,90.0,4.0,50,0.0,5.3
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",20,88.0,4.0,50,0.0,4.8
+strict,MS-MARCO,"PoisonGuard-RAG v4 (ours, final)",0,90.0,,50,0.0,6.1

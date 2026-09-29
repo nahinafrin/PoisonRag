@@ -1,0 +1,115 @@
+{
+  "n": 12,
+  "pii_leak_rate_off": {
+    "rate_pct": 0.0,
+    "ci": [
+      0,
+      24.3
+    ],
+    "leaked": 0
+  },
+  "pii_leak_rate_on": {
+    "rate_pct": 0.0,
+    "ci": [
+      0,
+      24.3
+    ],
+    "leaked": 0
+  },
+  "absolute_reduction_pct": 0.0,
+  "relative_reduction_pct": 0.0,
+  "paired_mcnemar": {
+    "mitigation_fixed": 0,
+    "mitigation_broke": 0,
+    "chi2": 0.0,
+    "p": 1.0,
+    "favours": "tie"
+  },
+  "fixed_by_layer": {},
+  "per_row": [
+    {
+      "id": 0,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 1,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 2,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 3,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 4,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 5,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 6,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 7,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 8,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 9,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 10,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    },
+    {
+      "id": 11,
+      "leaked_off": false,
+      "leaked_on": false,
+      "values_leaked_off": [],
+      "values_leaked_on": []
+    }
+  ]
+}
